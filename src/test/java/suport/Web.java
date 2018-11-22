@@ -11,14 +11,14 @@ public class Web {
     public static WebDriver createChrome(){
 
         // Abrindo o navegador
-        System.setProperty("webdriver.chrome.driver","/home/cicerooliverio/Downloads/chromedriver_linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/home/cicero-oliverio/Downloads/chromedriver_linux64/chromedriver");
         WebDriver navegador = navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         navegador.manage().window().maximize();
 
 
         // Navegando para a página do Taskit!
-        navegador.get("https://hmg-free-webadmin.ns2online.com.br/");
+        navegador.get("https://www.quintoandar.com.br/");
 
         return navegador;
 

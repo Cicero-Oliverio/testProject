@@ -57,6 +57,20 @@ public class loginTests {
 
     }
 
+    @Test
+    public void loginQuintoAndar(){
+        navegador.get("https://www.quintoandar.com.br/");
+
+        navegador.findElement(By.xpath("//span[contains(text(),'Entrar')]"));
+
+
+
+        navegador.findElement(By.cssSelector("input[name=\"ddi\"]")).sendKeys("+55");
+        navegador.findElement(By.cssSelector("input[name=\"ddd\"]")).sendKeys("11");
+        navegador.findElement(By.cssSelector("input[name=\"phone\"]")).sendKeys("975697393");
+
+    }
+
 
 
 
